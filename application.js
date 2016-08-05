@@ -1,6 +1,5 @@
 function OutputInstagramPhotos(_positive_tags, _negative_tags, element_id_for_append){
-    var token = '1814926231.673a773.388806d413c74c769e8d2b994de4afb8',
-        num_photos = 16;
+    var token = '1814926231.673a773.388806d413c74c769e8d2b994de4afb8';
 
     GetInstaPhotosByTags(_positive_tags, _negative_tags, []);
 
@@ -10,7 +9,7 @@ function OutputInstagramPhotos(_positive_tags, _negative_tags, element_id_for_ap
             url: 'https://api.instagram.com/v1/tags/' + tag + '/media/recent',
             dataType: 'jsonp',
             type: 'GET',
-            data: { access_token: token, count: num_photos },
+            data: { access_token: token },
             success: function(result){
                 for(x in result.data){
                     photos.push(result.data[x]);
