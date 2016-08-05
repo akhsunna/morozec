@@ -19,6 +19,7 @@ function OutputInstagramPhotos(_positive_tags, _negative_tags, element_id_for_ap
                     GetInstaPhotosByTags(positive_tags, negative_tags, photos);
                 } else {
                     photos = checkOnNegativeTags(photos, negative_tags);
+                    photos = photos.slice(0, 16);
                     photos = sortByCreatedAt(photos);
 
                     for(x in photos){
