@@ -10,11 +10,23 @@
 </head>
 <body>
     <h4>TEST INSTAGRAM SEARCH BY TAGS</h4>
-    <h5>Sandbox Mode (just akhsunna profile)</h5>
+    <h5>Sandbox Mode (just on akhsunna profile)</h5>
 
     <p>positive words: #aarhus, #people</p>
     <p>negative words: #naked, #tattoo</p>
 
     <div id="instagram_photos"></div>
+
+    <script>
+        $(document).ready(function(){
+
+            var _positive_tags = ['aarhus', 'people'];
+            var _negative_tags = ['tattoo', 'naked'];
+
+            OutputInstagramPhotos(_positive_tags, _negative_tags, 'instagram_photos');
+
+        });
+    </script>
+
 </body>
 </html>

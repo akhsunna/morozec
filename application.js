@@ -50,12 +50,3 @@ function OutputInstagramPhotos(_positive_tags, _negative_tags, element_id_for_ap
         });
     }
 }
-
-$(document).ready(function(){
-
-    var _positive_tags = ['aarhus', 'people'];
-    var _negative_tags = ['tattoo', 'naked'];
-
-    OutputInstagramPhotos(_positive_tags, _negative_tags, 'instagram_photos');
-
-});
